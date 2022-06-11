@@ -11,37 +11,40 @@
 }
 body {
   font-family: "Roboto", sans-serif;
-  width: 1600px;
   font-size: 14px;
   background-color: var(--background-white);
   color: var(--grey-color);
 }
+h1, h2, h3, h4, h5, h6, p{
+  margin: 0;
+}
+.conteiner{
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
 /* шапка */
 .header{
-  width: 1600px;
   display: flex;
   border-bottom: 1px solid var(--background-grey);
 }
 .menu{
   display: flex;
-  margin: 32px 0px 32px 93px;
-}
-.menu-link:not(:last-child){
-  margin: 0px 50px 0px 0px;
+  margin-top: 32px;
+  margin-bottom: 32px;
 }
 .logo {
-  width: 145px;
-height: 31px;
-left: 215px;
-top: 24px;
   font-family: "Raleway";
-  font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
   color: var(--black-color);
   letter-spacing: 0.03em;
-  margin: 24px 0px 25px 215px;
+  margin-top: 24px;
+  margin-bottom: 25px;
+}
+.menu-link{
+  padding-left: 50px;
 }
 .logo-web {
   color: var(--blue-color);
@@ -70,12 +73,18 @@ top: 24px;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  padding-left: 0;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  padding-left: 0px;
 }
 .header-mail{
-  margin: 19px 0px 32px 251px;
+  padding-left: 331px;
 }
 .header-tel{
-  margin: 19px 215px 32px 50px;
+  padding-left: 50px;
 }
 .header-contact .link {
   text-decoration: none;
@@ -86,6 +95,12 @@ top: 24px;
   color: var(--blue-color);
 }
 /* main */
+.biznes{
+  padding-top: 200px;
+  padding-bottom: 280px;
+  background-color: var(--background-black);
+  text-align: center;
+}
 .main-h {
   font-weight: 900;
   font-size: 44px;
@@ -93,8 +108,6 @@ top: 24px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-color);
-  padding: 200px 452px 280px 452px ;
-  text-align: center;
 }
 .main-button {
   font-family: "Roboto";
@@ -108,19 +121,12 @@ top: 24px;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 border-radius: 4px;
 border: none;
+margin-top: 40px;
 width: 200px;
 height: 50px;
 
 }
-.button-box{
-  position: absolute;
-  width: 200px;
-height: 50px;
-left: 700px;
-top: 480px;
-margin-top: -30px;
 
-}
 .main-buttons:hover,
 .main-button:focus {
   background-color: var(--main-button);
@@ -144,15 +150,32 @@ margin-top: -30px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
+.benefits-ul{
+  display: flex;
+  margin-top: 94px;
+  margin-bottom: 94px;
+}
+.benefits-ul-li:not(:last-child) {
+  margin-right: 30px;
+}
+.lessons{
+  padding-bottom: 94px;
+}
 .lessons-h {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--black-color);
+  text-align: center;
+  margin-bottom: 50px;
 }
 .lessons-ul {
   list-style: none;
+  display: flex;
+}
+.lessons-ul-li:not(:last-child) {
+  margin-right: 30px;
 }
 .team-h {
   font-weight: 700;
@@ -162,9 +185,6 @@ margin-top: -30px;
   text-align: center;
   color: var(--black-color);
 }
-.team-ul {
-  list-style: none;
-}
 .team-li-h {
   font-weight: 500;
   font-size: 16px;
@@ -172,6 +192,8 @@ margin-top: -30px;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--black-color);
+  padding-top: 30px;
+  padding-bottom: 10px;
 }
 .team-li-p {
   font-weight: 400;
@@ -179,13 +201,36 @@ margin-top: -30px;
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
+  padding-bottom: 30px;
+}
+.team{
+  background-color: var(--background-grey);
+}
+.team-h{
+  padding-top: 94px;
+  margin-bottom: 50px;
+text-align: center;
+}
+.team-ul{
+  display: flex;
+  padding-bottom: 94px;
+  margin: 0;
+}
+.team-li:not(:last-child) {
+  margin-right: 30px;
+}
+.team-li{
+  list-style: none;
+ background-color: var(--background-white);
+ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
+
 }
 /* footer */
 .footer{
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--background-black);
-  margin: -34px -8px -8px -8px;
 }
 .logo-footer {
   font-family: "Raleway";
@@ -195,10 +240,10 @@ margin-top: -30px;
   text-decoration: none;
   color: var(--white-color);
   letter-spacing: 0.03em;
-  margin: 60px 1240px 0px 215px;
 }
 .logo-web-footer {
   color: var(--blue-color);
+  
 }
 .adress {
   font-weight: 400;
@@ -206,8 +251,8 @@ margin-top: -30px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--white-color);
-  margin: 20px 1154px 0px 215px;
   font-style: normal;
+  margin-top: 20px;
 }
 
 .footer-mail {
@@ -218,7 +263,7 @@ margin-top: -30px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--color-a-grey);
-  margin: 9px 1154px 0px 215px;
+    margin-top: 9px;
 }
 .footer-tel {
   font-style: normal;
@@ -228,7 +273,7 @@ margin-top: -30px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--color-a-grey);
-  margin: 9px 1154px 0px 215px;
+  margin-top: 9px;
 }
 .footer-mail:hover,
 .footer-mail:focus {
@@ -238,56 +283,6 @@ margin-top: -30px;
 .footer-tel:focus {
   color: var(--blue-color);
 }
-/* студия */
-.biznes{
-  margin: -34px -8px 0px -8px;
-  background-color: var(--background-black);
-}
-.benefits-ul{
-  display: flex;
-  margin: 94px 215px 94px 215px;
-}
-.benefits-ul-li:not(:last-child) {
-  margin-right: 30px;
-}
-.lessons-h{
- margin-left: 612px;
- margin-top: 94px;
- margin-bottom: 50px;
-}
-.lessons-ul{
-  display: flex;
-  margin-bottom: 94px;
-  margin-left: 215px;
-  margin-right: 215px;
-}
-.lessons-ul-li:not(:last-child) {
-  margin-right: 30px;
-}
-.team{
-  background-color: var(--background-grey);
-  margin: -34px -8px -8px -8px;
-}
-.team-h{
-  padding-top: 94px;
-text-align: center;
-}
-.team-ul{
-  display: flex;
-  margin-top: 50px;
-  margin-left: 215px;
-  margin-right: 215px;
-  padding-bottom: 95px;
-}
-.team-li:not(:last-child) {
-  margin-right: 30px;
-}
-.team-li{
- background-color: var(--background-white);
- box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-border-radius: 0px 0px 4px 4px;
-}
-
 /* портфолио */
 .filter-button {
   font-family: "Roboto";
@@ -298,15 +293,14 @@ border-radius: 0px 0px 4px 4px;
   letter-spacing: 0.03em;
   color: var(--black-color);
   background-color: var(--background-grey);
-  cursor: pointer;  margin-top: 0;
+  cursor: pointer;  
   padding-left: 0;
-  margin-bottom: 34px;
   border-radius: 4px;
   border: none;
   padding: 6px 22px 6px 22px;
 }
 .filter-li:not(:last-child){
-  margin: 0px 8px 0px 0px;
+  padding-right: 8px;
 }
 
 .filter-button:hover,
@@ -317,15 +311,19 @@ border-radius: 0px 0px 4px 4px;
 .filter-ul {
   list-style: none;
   display: flex;
+  padding-top: 0;
   justify-content: center;
-  padding-top: 0px;
+  margin: 0px;
+  margin-top: 94px;
+  margin-bottom: 50px;
 }
 
 .projects-ul {
   list-style: none;
-  display: flex;
+   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  padding: 0px;
 }
 .projects-li-h {
   font-weight: 700;
@@ -333,7 +331,10 @@ border-radius: 0px 0px 4px 4px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--black-color);
-  margin: 20px 24px 0px 24px;
+  padding-top: 20px;
+  padding-bottom: 4px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 .projects-li-p {
   font-weight: 400;
@@ -341,12 +342,11 @@ border-radius: 0px 0px 4px 4px;
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--grey-color);
-  margin: 4px 24px 20px 24px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 .projects-li{
   border: 1px solid var(--background-grey)
-}
-.global-box{
- margin: 94px 180px;
 }
 
