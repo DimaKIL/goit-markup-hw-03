@@ -29,9 +29,13 @@ img {
   height: auto;
 }
 /* шапка */
-.header{
-  display: flex;
+.header-line{
+  width: 100vw;
   border-bottom: 1px solid var(--background-grey);
+}
+.header{
+  width: 1200px;
+  display: flex;
 }
 .menu{
   display: flex;
@@ -263,10 +267,22 @@ border-radius: 0px 0px 4px 4px;
   color: var(--white-color);
   font-style: normal;
   margin-top: 20px;
+}
+.f-mail{
+  margin-top: 9px;
   margin-bottom: 9px;
 }
+.footer-mail{
+font-style: normal;
+text-decoration: none;
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+color: var(--color-a-grey);
 
-.footer-mail {
+}
+.footer-tel{
   font-style: normal;
   text-decoration: none;
   font-weight: 400;
@@ -275,15 +291,7 @@ border-radius: 0px 0px 4px 4px;
   letter-spacing: 0.03em;
   color: var(--color-a-grey);
 }
-.footer-tel {
-  font-style: normal;
-  text-decoration: none;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: var(--color-a-grey);
-}
+
 .footer-mail:hover,
 .footer-mail:focus {
   color: var(--blue-color);
