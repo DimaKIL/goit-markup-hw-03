@@ -336,14 +336,16 @@ color: var(--color-a-grey);
   justify-content: center;
   margin: 0px;
   margin-bottom: 50px;
+  
 }
 
 .projects-ul {
   list-style: none;
    display: flex;
   flex-wrap: wrap;
+  padding-left: 0;
+  margin: 0;
   gap: 30px;
-  padding: 0px;
 }
 .projects-li-h {
   font-weight: 700;
@@ -360,9 +362,11 @@ color: var(--color-a-grey);
   color: var(--grey-color);
 }
 .projects-li{
-  border: 1px solid var(--background-grey)
+  border: 1px solid var(--background-grey);
+  width: 370px;
 }
 .projects-info{
   padding: 20px 24px 20px 24px;
+  border-top: none;
 }
 
